@@ -1,0 +1,142 @@
+#!/usr/bin/python
+
+import sys, os, time
+import xml.etree.ElementTree as ET
+import argparse
+import httplib
+import json
+
+CACHEFILE = '/tmp/bindstats.xml'
+
+parser = argparse.ArgumentParser()
+parser.add_argument("action", help="discoverzones | counter | zonecounter | zonemaintenancecounter | resolvercounter | socketcounter | incounter | outcounter")
+parser.add_argument("-z", help="zone")
+parser.add_argument("-c", help="counter name")
+parser.add_argument("-p", help="bind stats port")
+args = parser.parse_args()
+
+# Configurable port
+port = 8053
+if args.p:
+	port = args.p
+
+# Read from the cache if it exists and is less than a minute old, so we don't hit Bind directly too often.
+if os.path.exists(CACHEFILE) and time.time() - os.path.getmtime(CACHEFILE) <= 60:
+	tree = ET.parse(CACHEFILE)
+	root = tree.getroot()
+else:
+	conn = httplib.HTTPConnection('localhost:{}'.format(port))
+	conn.request('GET', '/')
+	resp = conn.getresponse()
+	if not resp.status == 200:
+		print >> sys.stderr, "HTTP GET Failed"
+		sys.exit(1)
+	content = resp.read()
+	conn.close()
+
+	f = open(CACHEFILE, 'w')
+	f.write(content)
+	f.close()
+
+	root = ET.fromstring(content)
+
+if args.action == 'discoverzones':
+	d = { 'data': [] }
+	for view in root.findall('./bind/statistics/views/view'):
+		if view.findtext('./name') in ('_default',):
+			for zone in view.findall('./zones/zone'):
+				if zone.find('./counters') is not None:
+					d['data'].append({'{#ZONE}': zone.findtext('./name')})
+	print json.dumps(d)
+
+elif args.action == 'counter':
+	if not args.c:
+		print >> sys.stderr, "Missing argument"
+		print "ZBX_NOTSUPPORTED"
+		sys.exit(1)
+	for zonestat in root.findall('./bind/statistics/server/nsstat'):
+		if zonestat.findtext('./name') == args.c:
+			print zonestat.findtext('./counter')
+			sys.exit(0)
+	print "ZBX_NOTSUPPORTED"
+	sys.exit(1)
+
+elif args.action == 'zonecounter':
+	if not (args.z and args.c):
+		print >> sys.stderr, "Missing argument"
+		print "ZBX_NOTSUPPORTED"
+		sys.exit(1)
+	for view in root.findall('./bind/statistics/views/view'):
+		if view.findtext('./name') in ('_default',):
+			for zone in view.findall('./zones/zone'):
+				if zone.findtext('./name') == args.z:
+					counter = zone.find('./counters/'+args.c)
+					if counter is not None:
+						print counter.text
+						sys.exit(0)
+	print "ZBX_NOTSUPPORTED"
+	sys.exit(1)
+
+elif args.action == 'zonemaintenancecounter':
+	if not args.c:
+		print >> sys.stderr, "Missing argument"
+		print "ZBX_NOTSUPPORTED"
+		sys.exit(1)
+	for zonestat in root.findall('./bind/statistics/server/zonestat'):
+		if zonestat.findtext('./name') == args.c:
+			print zonestat.findtext('./counter')
+			sys.exit(0)
+	print "ZBX_NOTSUPPORTED"
+	sys.exit(1)
+
+elif args.action == 'resolvercounter':
+	if not args.c:
+		print >> sys.stderr, "Missing argument"
+		print "ZBX_NOTSUPPORTED"
+		sys.exit(1)
+	for view in root.findall('./bind/statistics/views/view'):
+		if view.findtext('./name') in ('_default',):
+			for stat in view.findall('./resstat'):
+				if stat.findtext('./name') == args.c:
+					print stat.findtext('./counter')
+					sys.exit(0)
+	print "ZBX_NOTSUPPORTED"
+	sys.exit(1)
+
+elif args.action == 'socketcounter':
+	if not args.c:
+		print >> sys.stderr, "Missing argument"
+		print "ZBX_NOTSUPPORTED"
+		sys.exit(1)
+	for zonestat in root.findall('./bind/statistics/server/sockstat'):
+		if zonestat.findtext('./name') == args.c:
+			print zonestat.findtext('./counter')
+			sys.exit(0)
+	print "ZBX_NOTSUPPORTED"
+	sys.exit(1)
+
+elif args.action == 'incounter':
+	if not args.c:
+		print >> sys.stderr, "Missing argument"
+		print "ZBX_NOTSUPPORTED"
+		sys.exit(1)
+	for zonestat in root.findall('./bind/statistics/server/queries-in/rdtype'):
+		if zonestat.findtext('./name') == args.c:
+			print zonestat.findtext('./counter')
+			sys.exit(0)
+	print "ZBX_NOTSUPPORTED"
+	sys.exit(1)
+
+elif args.action == 'outcounter':
+	if not args.c:
+		print >> sys.stderr, "Missing argument"
+		print "ZBX_NOTSUPPORTED"
+		sys.exit(1)
+	for zonestat in root.findall('./bind/statistics/views/view/rdtype'):
+		if zonestat.findtext('./name') == args.c:
+			print zonestat.findtext('./counter')
+			sys.exit(0)
+	print "ZBX_NOTSUPPORTED"
+	sys.exit(1)
+
+
