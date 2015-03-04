@@ -2,17 +2,12 @@
 
 import time
 import sys
-print >> sys.stderr, "Time, Sys {}".format(time.time())
 import os
-print >> sys.stderr, "OS {}".format(time.time())
 import argparse
-print >> sys.stderr, "Argparse {}".format(time.time())
 import json
 
 JSONFILE = '/tmp/bindstats.json'
 CACHELIFE = 300
-
-print >> sys.stderr, "JSON, Imports complete {}".format(time.time())
 
 parser = argparse.ArgumentParser()
 parser.add_argument("action", help="discoverzones | counter | zonecounter | zonemaintenancecounter | resolvercounter | socketcounter | incounter | outcounter")
@@ -28,12 +23,10 @@ if args.p:
 
 # Read from the cache if it exists and is less than a minute old, so we don't hit Bind directly too often.
 if os.path.exists(JSONFILE) and time.time() - os.path.getmtime(JSONFILE) <= CACHELIFE:
-	print >> sys.stderr, "Cached {}".format(time.time())
 	f = open(JSONFILE)
 	j = json.load(f)
 	f.close()
 else:
-	print >> sys.stderr, "Not cached {}".format(time.time())
 	import httplib
 	conn = httplib.HTTPConnection('localhost:{}'.format(port))
 	conn.request('GET', '/')
@@ -44,12 +37,8 @@ else:
 	content = resp.read()
 	conn.close()
 
-	print >> sys.stderr, "Downloaded {}".format(time.time())
-
 	import xml.etree.ElementTree as ET
 	root = ET.fromstring(content)
-
-	print >> sys.stderr, "XML Parsed {}".format(time.time())
 
 	# Build the JSON cache
 	j = {
@@ -84,18 +73,13 @@ else:
 	for stat in root.findall('./bind/statistics/views/view/rdtype'):
 		j['outcounter'][stat.findtext('./name')] = stat.findtext('./counter')
 
-	print >> sys.stderr, "Parsed {}".format(time.time())
-
 	f = open(JSONFILE, 'w')
 	json.dump(j, f)
 	f.close()
 
-print >> sys.stderr, "Loaded {}".format(time.time())
-
 if args.action == 'discoverzones':
 	d = { 'data': [{'{#ZONE}': zone} for zone in j['zones'].keys()] }
 	print json.dumps(d)
-	print >> sys.stderr, "Done {}".format(time.time())
 	sys.exit(0)
 
 elif args.action == 'zonecounter':
@@ -105,7 +89,6 @@ elif args.action == 'zonecounter':
 		sys.exit(1)
 	if j['zones'].has_key(args.z) and j['zones'][args.z].has_key(args.c):
 		print j['zones'][args.z][args.c]
-		print >> sys.stderr, "Done {}".format(time.time())
 		sys.exit(0)
 	else:
 		print "ZBX_NOTSUPPORTED"
@@ -118,7 +101,6 @@ else:
 		sys.exit(1)
 	if j[args.action].has_key(args.c):
 		print j[args.action][args.c]
-		print >> sys.stderr, "Done {}".format(time.time())
 		sys.exit(0)
 	else:
 		print "ZBX_NOTSUPPORTED"
