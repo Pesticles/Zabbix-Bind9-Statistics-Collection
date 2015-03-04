@@ -10,6 +10,7 @@ print >> sys.stderr, "Argparse {}".format(time.time())
 import json
 
 JSONFILE = '/tmp/bindstats.json'
+CACHELIFE = 300
 
 print >> sys.stderr, "JSON, Imports complete {}".format(time.time())
 
@@ -26,7 +27,7 @@ if args.p:
 	port = args.p
 
 # Read from the cache if it exists and is less than a minute old, so we don't hit Bind directly too often.
-if os.path.exists(JSONFILE) and time.time() - os.path.getmtime(JSONFILE) <= 60:
+if os.path.exists(JSONFILE) and time.time() - os.path.getmtime(JSONFILE) <= CACHELIFE:
 	print >> sys.stderr, "Cached {}".format(time.time())
 	f = open(JSONFILE)
 	j = json.load(f)

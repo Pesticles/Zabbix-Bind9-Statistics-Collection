@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-03-04T02:22:28Z</date>
+    <date>2015-03-04T20:35:06Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -29,7 +29,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[AuthQryRej]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -72,7 +72,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[UpdateFwdFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -115,7 +115,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[UpdateRej]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -158,7 +158,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[UpdateDone]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -201,7 +201,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[UpdateFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -244,7 +244,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[UpdateBadPrereq]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -287,7 +287,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[Requestv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -330,7 +330,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[Requestv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -373,7 +373,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryFailure]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -416,7 +416,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QrySuccess]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -459,7 +459,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryAuthAns]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -502,7 +502,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryFORMERR]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -545,7 +545,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryNxrrset]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -588,7 +588,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryNoauthAns]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -631,7 +631,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryNXDOMAIN]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -674,7 +674,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryReferral]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -717,7 +717,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QrySERVFAIL]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -760,7 +760,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryRecursion]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -803,7 +803,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryDropped]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -846,7 +846,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[QryDuplicate]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -889,7 +889,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[RecQryRej]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -932,7 +932,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[XfrReqDone]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -975,7 +975,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[ReqEdns0]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1018,7 +1018,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[ReqBadSIG]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1061,7 +1061,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[ReqSIG0]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1104,7 +1104,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[ReqTSIG]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1147,7 +1147,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[ReqBadEDNSVer]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1190,7 +1190,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[RPZRewrites]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1233,7 +1233,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[Response]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1276,7 +1276,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[RespEDNS0]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1319,7 +1319,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[RespSIG0]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1362,7 +1362,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[RespTSIG]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1405,7 +1405,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[ReqTCP]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1448,7 +1448,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[RespTruncated]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1491,7 +1491,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[UpdateReqFwd]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1534,7 +1534,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[UpdateRespFwd]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1577,7 +1577,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.counter[XfrRej]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1620,7 +1620,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[A]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1663,7 +1663,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[AAAA]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1706,7 +1706,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[ANY]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1749,7 +1749,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[CNAME]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1792,7 +1792,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[MX]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1835,7 +1835,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[NAPTR]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1878,7 +1878,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[NS]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1921,7 +1921,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[PTR]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1964,7 +1964,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[SOA]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2007,7 +2007,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[SPF]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2050,7 +2050,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[SRV]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2093,7 +2093,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.incounter[TXT]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2136,7 +2136,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[A]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2179,7 +2179,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[AAAA]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2222,7 +2222,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[ANY]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2265,7 +2265,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[CNAME]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2308,7 +2308,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[MX]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2351,7 +2351,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[NAPTR]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2394,7 +2394,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[NS]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2437,7 +2437,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[PTR]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2480,7 +2480,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[SOA]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2523,7 +2523,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[SPF]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2566,7 +2566,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[SRV]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2609,7 +2609,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.outcounter[TXT]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2652,7 +2652,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[ValAttempt]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2695,7 +2695,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[ValFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2738,7 +2738,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[ValNegOk]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2781,7 +2781,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[ValOk]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2824,7 +2824,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[EDNS0Fail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2867,7 +2867,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QuerySockFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2910,7 +2910,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[FORMERR]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2953,7 +2953,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[GlueFetchv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2996,7 +2996,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[GlueFetchv4Fail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3039,7 +3039,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Queryv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3082,7 +3082,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Responsev4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3125,7 +3125,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[GlueFetchv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3168,7 +3168,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[GlueFetchv6Fail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3211,7 +3211,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Queryv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3254,7 +3254,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Responsev6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3297,7 +3297,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Lame]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3340,7 +3340,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Mismatch]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3383,7 +3383,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[NXDOMAIN]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3426,7 +3426,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[OtherError]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3469,7 +3469,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QueryAbort]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3512,7 +3512,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Retry]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3555,7 +3555,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QueryTimeout]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3598,7 +3598,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QryRTT10]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3641,7 +3641,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QryRTT100]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3684,7 +3684,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QryRTT500]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3727,7 +3727,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QryRTT800]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3770,7 +3770,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QryRTT1600]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3813,7 +3813,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[QryRTT1600+]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3856,7 +3856,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[SERVFAIL]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3899,7 +3899,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.resolvercounter[Truncated]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3942,7 +3942,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[FDwatchConn]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3985,7 +3985,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[FDwatchRecvErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4028,7 +4028,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[FDwatchSendErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4071,7 +4071,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[FDwatchBindFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4114,7 +4114,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[FDwatchConnFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4157,7 +4157,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[FDwatchClose]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4200,7 +4200,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4Conn]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4243,7 +4243,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4RecvErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4286,7 +4286,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4SendErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4329,7 +4329,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4AcceptFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4372,7 +4372,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4BindFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4415,7 +4415,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4ConnFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4458,7 +4458,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4OpenFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4501,7 +4501,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4Accept]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4544,7 +4544,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4Close]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4587,7 +4587,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP4Open]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4630,7 +4630,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6Conn]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4673,7 +4673,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6RecvErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4716,7 +4716,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6SendErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4759,7 +4759,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6AcceptFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4802,7 +4802,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6BindFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4845,7 +4845,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6ConnFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4888,7 +4888,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6OpenFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4931,7 +4931,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6Accept]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4974,7 +4974,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6Close]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5017,7 +5017,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[TCP6Open]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5060,7 +5060,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4Conn]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5103,7 +5103,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4RecvErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5146,7 +5146,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4SendErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5189,7 +5189,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4BindFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5232,7 +5232,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4ConnFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5275,7 +5275,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4OpenFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5318,7 +5318,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4Close]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5361,7 +5361,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP4Open]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5404,7 +5404,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6Conn]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5447,7 +5447,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6RecvErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5490,7 +5490,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6SendErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5533,7 +5533,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6BindFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5576,7 +5576,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6ConnFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5619,7 +5619,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6OpenFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5662,7 +5662,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6Close]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5705,7 +5705,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UDP6Open]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5748,7 +5748,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixConn]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5791,7 +5791,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixRecvErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5834,7 +5834,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixSendErr]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5877,7 +5877,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixAcceptFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5920,7 +5920,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixBindFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5963,7 +5963,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixConnFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6006,7 +6006,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixOpenFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6049,7 +6049,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixAccept]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6092,7 +6092,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixClose]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6135,7 +6135,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.socketcounter[UnixOpen]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6178,7 +6178,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[NotifyRej]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6221,7 +6221,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[AXFRReqv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6264,7 +6264,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[IXFRReqv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6307,7 +6307,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[NotifyInv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6350,7 +6350,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[NotifyOutv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6393,7 +6393,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[SOAOutv4]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6436,7 +6436,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[AXFRReqv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6479,7 +6479,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[IXFRReqv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6522,7 +6522,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[NotifyInv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6565,7 +6565,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[NotifyOutv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6608,7 +6608,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[SOAOutv6]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6651,7 +6651,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[XfrFail]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6694,7 +6694,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>bind.zonemaintenancecounter[XfrSuccess]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6768,7 +6768,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},AuthQryRej]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -6811,7 +6811,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},UpdateFwdFail]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -6854,7 +6854,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},UpdateRej]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -6897,7 +6897,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},UpdateDone]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -6940,7 +6940,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},UpdateFail]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -6983,7 +6983,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},UpdateBadPrereq]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7026,7 +7026,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},Requestv4]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7069,7 +7069,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},Requestv6]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7112,7 +7112,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryFailure]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7155,7 +7155,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QrySuccess]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7198,7 +7198,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryAuthAns]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7241,7 +7241,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryFORMERR]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7284,7 +7284,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryNxrrset]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7327,7 +7327,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryNoauthAns]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7370,7 +7370,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryNXDOMAIN]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7413,7 +7413,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryReferral]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7456,7 +7456,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QrySERVFAIL]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7499,7 +7499,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryRecursion]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7542,7 +7542,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryDropped]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7585,7 +7585,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},QryDuplicate]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7628,7 +7628,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},RecQryRej]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7671,7 +7671,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},XfrReqDone]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7714,7 +7714,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},ReqEdns0]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7757,7 +7757,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},ReqBadSIG]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7800,7 +7800,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},ReqSIG0]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7843,7 +7843,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},ReqTSIG]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7886,7 +7886,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},ReqBadEDNSVer]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7929,7 +7929,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},RPZRewrites]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -7972,7 +7972,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},Response]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8015,7 +8015,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},RespEDNS0]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8058,7 +8058,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},RespSIG0]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8101,7 +8101,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},RespTSIG]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8144,7 +8144,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},ReqTCP]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8187,7 +8187,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},RespTruncated]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8230,7 +8230,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},UpdateReqFwd]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8273,7 +8273,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},UpdateRespFwd]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
@@ -8316,7 +8316,7 @@
                             <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>bind.zonecounter[{#ZONE},XfrRej]</key>
-                            <delay>60</delay>
+                            <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
                             <status>0</status>
