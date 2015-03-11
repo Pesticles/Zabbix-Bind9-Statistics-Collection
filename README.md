@@ -4,6 +4,9 @@ This method utilises Bind 9s built in statistics export via HTTP/XML.
 
 Most statistics available are collected, several aggregate graphs are defined.
 
+## Requirements
+* Python-argparse
+
 ## To install:
 * Configure Bind to export statistics via HTTP by adding the following to your bind.conf and restarting bind:
 ```
