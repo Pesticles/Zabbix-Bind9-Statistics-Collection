@@ -28,7 +28,7 @@ if os.path.exists(JSONFILE) and time.time() - os.path.getmtime(JSONFILE) <= CACH
 	f.close()
 else:
 	import httplib
-	conn = httplib.HTTPConnection('localhost:{}'.format(port))
+	conn = httplib.HTTPConnection('localhost:{0}'.format(port))
 	conn.request('GET', '/')
 	resp = conn.getresponse()
 	if not resp.status == 200:
