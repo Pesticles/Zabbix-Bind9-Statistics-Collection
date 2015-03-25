@@ -7,7 +7,7 @@ import argparse
 import json
 
 JSONFILE = '/tmp/bindstats.json'
-CACHELIFE = 300
+CACHELIFE = 60
 
 parser = argparse.ArgumentParser()
 parser.add_argument("action", help="discoverzones | counter | zonecounter | zonemaintenancecounter | resolvercounter | socketcounter | incounter | outcounter")
