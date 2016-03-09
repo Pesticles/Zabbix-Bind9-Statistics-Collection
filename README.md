@@ -7,7 +7,7 @@ Most statistics available are collected, several aggregate graphs are defined.
 [Forked from https://github.com/Pesticles/Zabbix-Bind9-Statistics-Collection](https://github.com/Pesticles/Zabbix-Bind9-Statistics-Collection)
 
 ## Requirements
-* Zabbix 2.X.X
+* Zabbix 2.X.X and above
 * Python 3
 
 
