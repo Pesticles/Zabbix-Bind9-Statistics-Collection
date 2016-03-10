@@ -7,8 +7,7 @@ import json
 import os
 import sys
 import time
-import http.client
-import xml.etree.ElementTree as ElementTree
+
 
 JSONFILE = '/tmp/bindstats.json'
 CACHELIFE = 60
@@ -32,6 +31,7 @@ if os.path.exists(JSONFILE) and time.time() - os.path.getmtime(JSONFILE) <= CACH
         j = json.load(f)
 
 else:
+    import http.client
     conn = http.client.HTTPConnection('localhost:{0}'.format(port))
     conn.request('GET', '/')
     resp = conn.getresponse()
@@ -41,6 +41,7 @@ else:
     content = resp.read()
     conn.close()
 
+    import xml.etree.ElementTree as ElementTree
     root = ElementTree.fromstring(content)
 
     # Build the JSON cache
@@ -53,27 +54,27 @@ else:
             'incounter': {},
             'outcounter': {},
             }
-    for view in root.findall('./bind/statistics/views/view'):
+    for view in root.iterfind('./bind/statistics/views/view'):
         if view.findtext('./name') in ('_default',):
-            for zone in view.findall('./zones/zone'):
+            for zone in view.iterfind('./zones/zone'):
                 if zone.find('./counters') is not None:
                     counters = {}
-                    for counter in zone.findall('./counters/*'):
+                    for counter in zone.iterfind('./counters/*'):
                         counters[counter.tag] = counter.text
                     j['zones'][zone.findtext('./name')] = counters
-    for stat in root.findall('./bind/statistics/server/nsstat'):
+    for stat in root.iterfind('./bind/statistics/server/nsstat'):
         j['counter'][stat.findtext('./name')] = stat.findtext('./counter')
-    for stat in root.findall('./bind/statistics/server/zonestat'):
+    for stat in root.iterfind('./bind/statistics/server/zonestat'):
         j['zonemaintenancecounter'][stat.findtext('./name')] = stat.findtext('./counter')
-    for view in root.findall('./bind/statistics/views/view'):
+    for view in root.iterfind('./bind/statistics/views/view'):
         if view.findtext('./name') in ('_default',):
-            for stat in view.findall('./resstat'):
+            for stat in view.iterfind('./resstat'):
                 j['resolvercounter'][stat.findtext('./name')] = stat.findtext('./counter')
-    for stat in root.findall('./bind/statistics/server/sockstat'):
+    for stat in root.iterfind('./bind/statistics/server/sockstat'):
         j['socketcounter'][stat.findtext('./name')] = stat.findtext('./counter')
-    for stat in root.findall('./bind/statistics/server/queries-in/rdtype'):
+    for stat in root.iterfind('./bind/statistics/server/queries-in/rdtype'):
         j['incounter'][stat.findtext('./name')] = stat.findtext('./counter')
-    for stat in root.findall('./bind/statistics/views/view/rdtype'):
+    for stat in root.iterfind('./bind/statistics/views/view/rdtype'):
         j['outcounter'][stat.findtext('./name')] = stat.findtext('./counter')
 
     with open(JSONFILE, 'w') as f:
