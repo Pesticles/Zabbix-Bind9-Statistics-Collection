@@ -7,7 +7,7 @@ Most statistics available are collected, several aggregate graphs are defined.
 [Forked from https://github.com/Pesticles/Zabbix-Bind9-Statistics-Collection](https://github.com/Pesticles/Zabbix-Bind9-Statistics-Collection)
 
 ## Requirements
-* Zabbix 2.X.X and above
+* Zabbix 2.X.X and Zabbix 3.X.X
 * Python 3
 
 
@@ -23,7 +23,7 @@ Debian/Ubuntu)
 * Copy the script bind-stats.py to /usr/local/bin/ (or anywhere else you like, but you will need to alter the
 contents of
 userparameter_bind.conf)
-* Import the xml template into Zabbix
+* Import the xml template into Zabbix (zbx_bind_statistics_template_v3.xml for Zabbix 3.X.X)
 
 ## Note:
 
