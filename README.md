@@ -1,5 +1,7 @@
 # Zabbix Bind9 Statistics Collection
 
+[![Join the chat at https://gitter.im/Zabbix-Bind9-Statistics-Collection/Lobby](https://badges.gitter.im/Zabbix-Bind9-Statistics-Collection/Lobby.svg)](https://gitter.im/Zabbix-Bind9-Statistics-Collection/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This method utilises Bind 9s built in statistics export via HTTP/XML.
 
 Most statistics available are collected, several aggregate graphs are defined.
